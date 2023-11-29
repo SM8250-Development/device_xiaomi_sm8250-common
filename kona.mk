@@ -244,6 +244,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
 
+# Media
+PRODUCT_PACKAGES += \
+    libstagefrighthw \
+    libstagefright_foundation-v33
+
 # Media configs
 PRODUCT_PACKAGES += \
     media_codecs_c2.xml \
