@@ -102,6 +102,10 @@ TARGET_KERNEL_CONFIG := \
     vendor/debugfs.config \
     vendor/xiaomi/${TARGET_DEVICE}.config
 
+# Kernel Clang Flags
+KERNEL_CC := CC=clang
+override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
+
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
