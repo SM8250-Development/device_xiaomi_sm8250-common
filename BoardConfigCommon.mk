@@ -78,7 +78,7 @@ $(call soong_config_set,surfaceflinger,udfps_lib,//hardware/xiaomi:libudfps_exte
 endif
 
 # Init
-TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_kona
+$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):init_xiaomi_kona)
 
 # Kernel
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
