@@ -102,7 +102,7 @@ TARGET_KERNEL_CONFIG := \
     vendor/xiaomi/sm8250-common.config
 
 # Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # Media
 TARGET_USES_ION := true
