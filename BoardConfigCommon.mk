@@ -98,8 +98,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 TARGET_KERNEL_CONFIG := \
     vendor/kona-perf_defconfig \
+    vendor/xiaomi/sm8250-common.config \
     vendor/debugfs.config \
-    vendor/xiaomi/sm8250-common.config
+    vendor/xiaomi/${TARGET_DEVICE}.config
 
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
